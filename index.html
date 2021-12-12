@@ -14,8 +14,32 @@
 <meta property="og:site_name" content="ernestoyoofi.github.io" /> 
 <meta name="keywords" content="Website Resmi Ernesto Yoofi, Development, Projects, And Team Supported"/>
 <meta name="description" content="Website Resmi Ernesto Yoofi, Development, And Projects"/>
+<!-- Google Verifikasi & Searching Engine -->
 <meta name="google-site-verification" content="LrdTUW9psUAMbh4Ia074-BPEVmcpBxF6Gwf0MSgQXZs">
 <meta name="google" content="sitelinkssearchbox"/>
+<!-- Searching ( Tersedia Hanya Halaman Beranda ) -->
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://ernestoyoofi.github.io/",
+      "potentialAction": [{
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://query.example.com/search?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      },{
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "android-app://com.example/https/query.example.com/search/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }]
+    }
+    </script>
 <!-- Xml -->
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="sitemap/feed-ernesto.xml">
@@ -114,6 +138,11 @@ a {
   background-color: orange;
 		border: 1px solid orange;
 } 
+.submit-btn-error
+{
+  background-color: red;
+  border: 1px solid red;
+}
 .main-menu
 {
   background-color: rgba(71, 71, 71, 0.25);
@@ -430,19 +459,21 @@ section.home
 <li class="menu-item"><a class="aqua" style="font-style: normal;font-weight: normal;"><i class="fa fa-home"></i></i>Homes <i class="fa fa-caret-down" style="padding-top: 3px; font-size: 13px;"></i></a></li>
 </section>
 <section class="drop-menu-bar-aqua">
-<a href="#profil"><li class="menu-item"><i class="fa fa-caret-right"></i>Profil</li></a>
-<a href="#about-me"><li class="menu-item"><i class="fa fa-caret-right"></i>Tentang Saya<i class="fa fa-caret-down" style="padding-top: 3px; font-size: 13px;"></i></li></a>
-<a href=""><li class="menu-item"><i class="fa fa-hide"></i>Perkenalan</li></a>
+<a href="#profil"><li class="menu-item"><i class="fa fa-caret-right"></i>Profil <i class="fa fa-caret-down" style="padding-top: 3px; font-size: 13px;"></i></li></a>
+<a href="#profil-picture"><li class="menu-item"><i class="fa fa-hide"></i>Foto Profil</li></a>
+<a href="#tag"><li class="menu-item"><i class="fa fa-hide"></i>Tag</li></a>
+<a href="#about-me"><li class="menu-item"><i class="fa fa-caret-right"></i>Tentang Saya <i class="fa fa-caret-down" style="padding-top: 3px; font-size: 13px;"></i></li></a>
+<a href="#me"><li class="menu-item"><i class="fa fa-hide"></i>Perkenalan</li></a>
 <a href="#history-school"><li class="menu-item"><i class="fa fa-hide"></i>History Sekolah</li></a>
 <a href="https://github.com/ernestoyoofi"><li class="menu-item"><i class="fa fa-hide"></i>Github 1 (Ernestoyoofi)</li></a>
 <a href="https://github.com/GarammanisXD"><li class="menu-item"><i class="fa fa-hide"></i>Github 2 (GarammanisXD)</li></a>
 <a href="#my-project"><li class="menu-item"><i class="fa fa-caret-right"></i>Project Yang Telah Dibuat <i class="fa fa-caret-down" style="padding-top: 3px; font-size: 13px;"></i></li></a>
 <a href="#project-1"><li class="menu-item"><i class="fa fa-hide"></i>Spesana "Website Sekolah"</li></a>
-<a href=""><li class="menu-item"><i class="fa fa-hiden"></i>CSS Online V1.4 New Style</li></a>
-<a href=""><li class="menu-item"><i class="fa fa-hiden"></i>Web Api Data Covid 19 Indo</li></a>
+<a href="#project-2"><li class="menu-item"><i class="fa fa-hiden"></i>Web Api Data Covid 19 Indo</li></a>
 <a href="#conten"><li class="menu-item"><i class="fa fa-caret-right"></i>Konten <i class="fa fa-caret-down" style="padding-top: 3px; font-size: 13px;"></i></li></a>
 <a href="#conten-youtube"><li class="menu-item"><i class="fa fa-hide"></i>Youtube</li></a>
 <a href="#conten-instagram"><li class="menu-item"><i class="fa fa-hide"></i>Instagram</li></a>
+<a href="#tiktok"><li class="menu-item"><i class="fa fa-hide"></i>Tik Tok</li></a>
 </section>
 <section class="other-pages">
 <a href="community.html"><li class="menu-item"><i class="fa fa-commenting-o"></i>Komunitas & Team Support</li></a>
@@ -452,7 +483,7 @@ section.home
 <a href=""><li class="menu-item"><i class="fa fa-newspaper-o"></i>Berita & Kabar</li></a>
 <a href="setting.html"><li class="menu-item"><i class="fa fa-gear"></i>Settings</li></a>
 <a href="bug.html"><li class="menu-item"><i class="fa fa-bug"></i>Bug Fixes & Reporting</li></a>
-<a onclick="alert('[ Informasi Sertifikasi Website ] Website Dibuat Oleh : @Ernestoyoofi, Tanggal Pembuatan Website : 26/11/2021, Tanggal Perilisan Website : 28/11/2021, Website Pertama : https://ernestoyoofi.github.io/spesana/, Terakhir Update Version : 7/12/2021,Website Version : 1.17.4 Bug Fixes, Kadaluwarsa Lisensi Website : 5/4/2022, Kadaluarsa Sertifikasi Website : 14/4/2022, Bahasa : Indonesia ( in / id ), Tema Mode : Dark Mode, Nama URL Website Tersedia : https://ernestoyoofi.github.io/ , https://ernestoyoofi.github.io/spesana/ , ernestoyoofi.github.io ,Organisasi : Github, Inc. , Common Name : github.com, Verification By Google : Yes, Engine : AMP HTML Accelerate, Code Index : Yes, Search Console : No, Privasi Website : No, Open Source : Yes, API Script : JavaScript (JS)')"><li class="menu-item"><i class="fa fa-info"></i>Infomasi Sertifikat Website</li></a>
+<a href="sertifikat.html#informasi-sertifikat" onclick="alert('[ Informasi Sertifikasi Website ] Website Dibuat Oleh : @Ernestoyoofi, Tanggal Pembuatan Website : 26/11/2021, Tanggal Perilisan Website : 28/11/2021, Website Pertama : https://ernestoyoofi.github.io/spesana/, Terakhir Update Version : 7/12/2021,Website Version : 1.17.4 Bug Fixes, Kadaluwarsa Lisensi Website : 5/4/2022, Kadaluarsa Sertifikasi Website : 14/4/2022, Bahasa : Indonesia ( in / id ), Tema Mode : Dark Mode, Nama URL Website Tersedia : https://ernestoyoofi.github.io/ , https://ernestoyoofi.github.io/spesana/ , ernestoyoofi.github.io ,Organisasi : Github, Inc. , Common Name : github.com, Verification By Google : Yes, Engine : AMP HTML Accelerate, Code Index : Yes, Search Console : No, Privasi Website : No, Open Source : Yes, API Script : JavaScript (JS)')"><li class="menu-item"><i class="fa fa-info"></i>Infomasi Sertifikat Website</li></a>
 </section>
 <p> </p>
 </ul>
