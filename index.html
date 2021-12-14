@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="in">
+<html lang="en">
 <head>
 <!-- Icon Website -->
 <link rel="icon" href="https://ernestoyoofi.github.io/image/icon/nekokiara-chan-say-hello.png">
@@ -18,6 +18,17 @@
 <meta name="google-site-verification" content="LrdTUW9psUAMbh4Ia074-BPEVmcpBxF6Gwf0MSgQXZs">
 <meta name="google" content="sitelinkssearchbox"/>
 <!-- Searching ( Tersedia Hanya Halaman Beranda ) -->
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-XXXXX-Y', 'auto');
+ga('send', 'pageview');
+</script>
+<!-- End Google Analytics -->
 <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -40,6 +51,7 @@
       }]
     }
     </script>
+    
 <!-- Xml -->
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="sitemap/feed-ernesto.xml">
@@ -267,6 +279,7 @@ section.home
   margin: auto;
   padding: auto;
   width: 95%;
+  max-width: 700px;
   height: 100%;
 }
 .search
@@ -294,7 +307,7 @@ section.home
 {
   color: white;
   background-color: #1f1f1f;
-  padding: 4px 4px;
+  padding: 6px 6px;
   border-radius: 5px;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, 
   rgba(17, 17, 26, 0.1) 0px 8px 24px, 
@@ -327,13 +340,20 @@ section.home
   background-image: url("image/banner.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
+}#more {display: none;}
+.btn-show-all {
+  border: none;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  background-color: #1f1f1f;
 }
 </style>
 </head>
-<body>	
-
+<body style="background-color: #393939">	
 <!-- / Navigator Bar Pages -->
-<p style="padding-top: 38px"></p>
+<p style="padding-top: 38px; background-color: #303030;"></p>
 <!-- Dasbords -->
 <div class="dasbord">
 				<!-- Up -->
@@ -346,38 +366,119 @@ section.home
 <center><i class="fa fa-refresh bg-dark" style="padding-top: 8px;" alt="Refresh"></i></center>
 </div></a> -->
 <br>
-<!-- Profils -->
-<p style="padding-left: 8px;" id="profil"><div class="center-box"><div class="banner">
-				<i class="fa fa-user bg-dark"></i> <b class="bg-dark"> Profil :</b></p>
+<div class="center-box">
+<p class="bg-dark"><i class="fa fa-desktop"></i> <b>Baru Baru Ini :</b></p>
+</div>
 <br>
-
-
+<!-- Profils -->
+<p style="padding-left: 8px;" id="profil">
+<div class="center-box">
+<i class="fa fa-github bg-dark"></i> <b class="bg-dark"> Github :</b></p>
+<div class="project" style="overflow: auto;">
+<img src="https://avatars.githubusercontent.com/u/94425296?v=4.jpg" class="soft-shadow" alt="..." style="width: 120px; border-radius: 13px; border: 1px solid aqua; float: right;" >
+<p><b class="bg-dark">Ernesto Yoofi <i class="fa fa-check" style="background-color: #1562ff; border-radius: 50%; padding: 2px; font-size: 10px;" alt="verifikasi berhasil"></i></b></p>
+<p class="bg-dark" style="font-size: 11px">@ernestoyoofi</p>
+<br>
+<p style="font-size: 12px;">Saya Pemula Bang ☺</p>
+</div>
+<p style="padding-top: 5px"></p>
+<!-- following -->
+<span id="dots"></span>
+<div class="project">
 <center>
-<a href="image/profil-unknow.png" download="profil"><img src="image/profil-unknow.png" class="soft-shadow" alt="..." style="width: 30%; border-radius: 6px; border: 1px solid aqua;" ></a>
-<p><b class="bg-dark">Ernesto Yoofi <a href="verification.html#admin-website"><i class="fa fa-check" style="background-color: #1562ff; border-radius: 50%; padding: 2px; font-size: 10px;" alt="verifikasi berhasil"></i></b></a></b></p>
-<p><b class="bg-dark" style="font-size: 9px">Student | Editor | Engineer | Conten Creator | Delevoper</b></p>
-</center>
+<button onclick="showAll()" id="btnread" class="btn-show-all">Klik Disini Untuk Melihat Following</button></center>
 </div>
+<span id="following" style="display: none">
+<p style="padding-top: 5px"></p>
+<div class="project" style="overflow: auto;">
+<img src="https://avatars.githubusercontent.com/u/83629560?v=4.jpg" class="soft-shadow" alt="..." style="width: 120px; border-radius: 13px; border: 1px solid aqua; float: right;" >
+<p><b class="bg-dark">GarammanisXD</b></p>
+<p class="bg-dark" style="font-size: 11px">@garammanisxd</p>
+<br><p style="font-size: 12px;"></p></div>
+<p style="padding-top: 5px"></p>
+<div class="project" style="overflow: auto;">
+<img src="https://avatars.githubusercontent.com/u/2681894?v=4.jpg" class="soft-shadow" alt="..." style="width: 120px; border-radius: 13px; border: 1px solid aqua; float: right;" >
+<p><b class="bg-dark">Sandhika Galih <i class="fa fa-check" style="background-color: #1562ff; border-radius: 50%; padding: 2px; font-size: 10px;" alt="verifikasi berhasil"></i></b></p>
+<p class="bg-dark" style="font-size: 11px">@sandhikagalih</p>
+<br>
+<p style="font-size: 12px;">Founder <a href="https://www.youtube.com/webprogrammingunpas" style="font-size: 12px;">youtube.com/webprogrammingunpas</a> Lecturer @informatikaunpas</p>
 </div>
-<div class="center-box" id="about-me">
-<p><i class="fa fa-userbg-dark"></i> <b class="bg-dark"><i class="fa fa-user"></i> Tentang Saya :</b></p>
+<p style="padding-top: 5px"></p>
+<div class="project" style="overflow: auto;">
+<img src="https://avatars.githubusercontent.com/u/94438497?v=4" class="soft-shadow" alt="..." style="width: 120px; border-radius: 13px; border: 1px solid aqua; float: right;" >
+<p><b class="bg-dark">YosepGannny</b></p>
+<p class="bg-dark" style="font-size: 11px">@YosepGanny</p>
+<br>
+<p style="font-size: 12px;"></p>
+</div>
+</span>
+<script>
+function showAll() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("following");
+  var btnText = document.getElementById("btnread");
 
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Klik Disini Untuk Melihat Following";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Klik Disini Untuk Menutup Tampilan Following";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+<!--  -->
+<p style="padding-top: 5px"></p>
+<!-- following -->
+<span id="titik"></span>
+<div class="project">
+<center>
+<button onclick="showAllFollow()" id="btnread-one" class="btn-show-all">Klik Disini Untuk Melihat Followers</button></center>
+</div>
+<span id="follower" style="display: none">
+<p style="padding-top: 5px"></p>
+<div class="project" style="overflow: auto;">
+<img src="https://avatars.githubusercontent.com/u/95857408?v=4" class="soft-shadow" alt="..." style="width: 120px; border-radius: 13px; border: 1px solid aqua; float: right;" >
+<p><b class="bg-dark">Wafi</b></p>
+<p class="bg-dark" style="font-size: 11px">@yetsa3</p>
+<br><p style="font-size: 12px;"></p></div>
+<p style="padding-top: 5px"></p>
+</span>
+<script>
+function showAllFollow() {
+  var dots = document.getElementById("titik");
+  var moreText = document.getElementById("follower");
+  var btnText = document.getElementById("btnread-one");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Klik Disini Untuk Melihat Followers";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Klik Disini Untuk Menutup Tampilan Followers";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+<!--  -->
 </div>
 <p style="padding-top: 20px;"></p>
 <div class="center-box" id="my-project">
 <!-- Projects -->
 <p><i class="fa fa-userbg-dark"></i> <b class="bg-dark"><i class="fa fa-object-ungroup"></i> Project Yang Telah Dibuat :</b></p>
 <!-- #1 -->
-<br>
 <div class="project">
 		<img src="image/cache/icon-website-spesana.png" alt="/root//bin/cache/embed/image/thumbnail-1.png" width="100">
-<b class="bg-dark" style="padding-bottom: 6px;">Spesana 7B <a href="verification.html#website-spesana"><i class="fa fa-check" style="background-color: #1562ff; border-radius: 50%; padding: 2px; font-size: 10px;" alt="verifikasi berhasil"></i></b></a>
+<b class="bg-dark" style="padding-bottom: 6px;">Spesana 7B <i class="fa fa-check" style="background-color: #1562ff; border-radius: 50%; padding: 2px; font-size: 10px;" alt="verifikasi berhasil"></i></b>
 <br>
 		<p class="bg-dark" style="font-size: 10px;">Project Type : <a href="type.html#website"style="font-size: 10px; background-color: #1562ff; padding-left: 3px; padding-right: 3px; border-radius: 2px;"><i class="fa fa-globe"></i> Website</a>, <a href="type.html#education"style="font-size: 10px; background-color: #1562ff; padding-left: 3px; padding-right: 3px; border-radius: 2px;"><i class="fa fa-graduation-cap"></i> Education</a>, <a href="type.html#information"style="font-size: 10px; background-color: #1562ff; padding-left: 3px; padding-right: 3px; border-radius: 2px;"><i class="fa fa-info"></i> Information</a>, <a href="type.html#branch-main"style="font-size: 10px; background-color: #1562ff; padding-left: 3px; padding-right: 3px; border-radius: 2px;"><i class="fa fa-code-fork"></i> Branch : Main</a>, <a href="type.html#school"style="font-size: 10px; background-color: #1562ff; padding-left: 3px; padding-right: 3px; border-radius: 2px;"><i class="fa fa-graduation-cap"></i> School</a>, <a href="type.html#github-pages"style="font-size: 10px; background-color: #1562ff; padding-left: 3px; padding-right: 3px; border-radius: 2px;"><i class="fa fa-github"></i> Github Pages</a></p>
 		<p class="bg-dark" style="font-size: 10px;">Link / URL : <a href="https://ernestoyoofi.github.io/spesana/"style="font-size: 10px; background-color: #2b6dff; padding-left: 3px; padding-right: 3px; border-radius: 2px;">https://ernestoyoofi.github.io/spesana</a></p>
 		<p style="font-size: 10px;">Verification : <a href="verification.html#spesana" style="font-size: 10px; background-color: #1562ff; padding-left: 3px; padding-right: 3px; border-radius: 2px;">Verification successes <i class="fa fa-check"></i></a></p>
 		<p style="font-size: 10px;">Description : <a href="https://ernestoyoofi.github.io/sitmap/feed-spesana7b"style="font-size: 10px; background-color: #1562ff; padding-left: 3px; padding-right: 3px; border-radius: 2px;">Website Murid SMP N 1 Nanggulan 2021 - 2024 !</a></p>
-		<p style="font-size: 10px;">Status : <a style="font-size: 10px; background-color: #11ff00; padding-left: 3px; padding-right: 3px; border-radius: 2px;">Safety <i class="fa fa-check"></i></a>, <a style="font-size: 10px; background-color: #11ff00; padding-left: 3px; padding-right: 3px; border-radius: 2px;">Online <i class="fa fa-check"></i></a>, <a style="font-size: 10px; background-color: #ff8800; padding-left: 3px; padding-right: 3px; border-radius: 2px;">Cooked Access <i class="fa fa-spinner"></i></a>, <a style="font-size: 10px; background-color: #ff1515; padding-left: 3px; padding-right: 3px; border-radius: 2px;">Requirements <i class="fa fa-close"></i></a></p>
+		<p style="font-size: 10px;">Status : <a style="font-size: 10px; background-color: #11ff00; padding-left: 3px; padding-right: 3px; border-radius: 2px;">Safety <i class="fa fa-check"></i></a>, <a style="font-size: 10px; background-color: #11ff00; padding-left: 3px; padding-right: 3px; border-radius: 2px;">Online <i class="fa fa-check"></i></a>, <a style="font-size: 10px; background-color: #ff1515; padding-left: 3px; padding-right: 3px; border-radius: 2px;">Cooked Access <i class="fa fa-close"></i></a>, <a style="font-size: 10px; background-color: #ff1515; padding-left: 3px; padding-right: 3px; border-radius: 2px;">Requirements <i class="fa fa-close"></i></a></p>
 		<p style="font-size: 10px;">Program : <a style="font-size: 10px; background-color: #1562ff; padding-left: 3px; padding-right: 3px; border-radius: 2px;">HTML <i class="fa fa-html5"></i></a>, <a style="font-size: 10px; background-color: #1562ff; padding-left: 3px; padding-right: 3px; border-radius: 2px;">CSS <i class="fa fa-css3"></i></a>, <a style="font-size: 10px; background-color: #1562ff; padding-left: 3px; padding-right: 3px; border-radius: 2px;">JavaScript <i class="fa fa-coffee"></i></a></p>
 		<p style="font-size: 10px;">Storages : <a style="font-size: 10px; background-color: #04AA6D; padding-left: 3px; padding-right: 3px; border-radius: 2px;">26,3MB / ?GB <i class="fa fa-hdd-o"></i></a></p>
 		<div class="container">
@@ -387,7 +488,6 @@ section.home
 </div><p style="padding-top: 20px;" id="conten"></p>
 <div class="center-box">
 <p><i class="fa fa-video-camera bg-dark"></i> <b class="bg-dark">Konten :</b></p>
-<br>
 <b class="bg-dark" style="font-size: 12px">Youtube :</b>
 <!-- Display 1 -->
 <div class="video-container"><iframe width="100%" style="box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); decoration: none;" src="https://www.youtube-nocookie.com/embed/Y9iVCwzQTm0?showinfo=0"frameborder="0" allowfullscreen id="screen-1 embed">
@@ -396,7 +496,8 @@ section.home
 <div class="video-container"><iframe width="100%" height="84%" style="box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); decoration: none;" src="https://www.youtube-nocookie.com/embed/R_HcMhF5W3U?showinfo=0"frameborder="0" allowfullscreen id="screen-2 embed"></iframe></div>
 <!-- Display 3 -->
 <div class="video-container"><iframe width="100%" style="box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); decoration: none;" src="https://www.youtube-nocookie.com/embed/h8zdTLyAWJs?showinfo=0"frameborder="0" allowfullscreen id="screen-3 embed">
-</iframe></div>
+</iframe>
+</div>
 <br>
 <b class="bg-dark" style="font-size: 12px">Instagram :</b>
 <!-- Display 1 -->
@@ -408,7 +509,6 @@ section.home
 <div class="center-box">
 <p><i class="fa fa-paper-plane bg-dark"></i> <b class="bg-dark">Kirim Pesan :</b></p>
 <!-- Form -->
-<p style="padding-top: 2px"></p>
 <form name="text-contact-form" class="com-box">
 	  <div>
 	  	  <label for="name" class="form-label bg-dark">Nama :</label>
@@ -431,20 +531,29 @@ section.home
 </script>
 </div>
 <br>
+<!-- Facebook Comments -->
+<div class="center-box">
+<p><i class="fa fa-commenting-o bg-dark"></i> <b class="bg-dark">Komentar :</b></p>
+<div class="project">
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/id_ID/sdk.js#xfbml=1&version=v12.0" nonce="vTFCxPaW"></script>
+<div class="fb-comments" data-href="https://ernestoyoofi.github.io" data-width="100%" data-numposts="3"></div>
+</div>
+</div>
 <!-- End -->
 <div class="end-page">
 <p style="padding-top: 12px"></p>
-<p><center>
-<a href="licency-and-policy.html" style="padding:3px; color:#0d62ff;">Lisensi dan kebijakan</a>
-<a href="terms-of-service.html" style="padding:3px; color:#0d62ff;">Ketentuan Layanan</a>
-</center></p>
+<center>
+<p><a href="licency-and-policy.html" style="padding:3px; color:#0d62ff;">Lisensi dan kebijakan</a></a>
+<p><a href="terms-of-service.html" style="padding:3px; color:#0d62ff;">Ketentuan Layanan</a></p>
+<p><a href="mailto:garammanisxd@gmail.com"  style="padding:3px; color:#0d62ff;">Hubungi Saya</a></p>
 <br>
-<center style="color:#b8b8b8">Tema : <a href="settings.html#theme" style="color:#b8b8b8">Mode Gelap. </a> Bahasa : <a href="settings.html#language" style="color:#b8b8b8">Indonesia ( id / in ).</a> </center>
+<p class="bg-dark">Terakhir Update : 13/12/2021 16:46</p>
+</center>
 <br>
-<p><center style="color:#b8b8b8">© 2021 - 2022 Ernesto Yoofi, Seluruh Hak Cipta</center></p>
+<p><center style="color:#b8b8b8"><a href="licency-and-policy" style="color:#b8b8b8">Copyright ® 2021 - 2022 Ernesto yoofi</a>, All rights reserved.</center></p>
 <p style="padding-bottom: 12px"></p>
 </div>
-
 <!-- Navigation Bar Page -->
 <div class="menu-space">
 <p style="padding-left: 52px;padding-top: 12px;" class="bg-dark"><i class="fa fa-home bg-dark"></i> Home <b style="float:right; padding-right: 9px; font-weight: normal;" id="time-clock"><i class="fa fa-spinner"></i> Loading Clock Time...</b></p><body onload="startTime()">
@@ -462,11 +571,6 @@ section.home
 <a href="#profil"><li class="menu-item"><i class="fa fa-caret-right"></i>Profil <i class="fa fa-caret-down" style="padding-top: 3px; font-size: 13px;"></i></li></a>
 <a href="#profil-picture"><li class="menu-item"><i class="fa fa-hide"></i>Foto Profil</li></a>
 <a href="#tag"><li class="menu-item"><i class="fa fa-hide"></i>Tag</li></a>
-<a href="#about-me"><li class="menu-item"><i class="fa fa-caret-right"></i>Tentang Saya <i class="fa fa-caret-down" style="padding-top: 3px; font-size: 13px;"></i></li></a>
-<a href="#me"><li class="menu-item"><i class="fa fa-hide"></i>Perkenalan</li></a>
-<a href="#history-school"><li class="menu-item"><i class="fa fa-hide"></i>History Sekolah</li></a>
-<a href="https://github.com/ernestoyoofi"><li class="menu-item"><i class="fa fa-hide"></i>Github 1 (Ernestoyoofi)</li></a>
-<a href="https://github.com/GarammanisXD"><li class="menu-item"><i class="fa fa-hide"></i>Github 2 (GarammanisXD)</li></a>
 <a href="#my-project"><li class="menu-item"><i class="fa fa-caret-right"></i>Project Yang Telah Dibuat <i class="fa fa-caret-down" style="padding-top: 3px; font-size: 13px;"></i></li></a>
 <a href="#project-1"><li class="menu-item"><i class="fa fa-hide"></i>Spesana "Website Sekolah"</li></a>
 <a href="#project-2"><li class="menu-item"><i class="fa fa-hiden"></i>Web Api Data Covid 19 Indo</li></a>
@@ -476,14 +580,13 @@ section.home
 <a href="#tiktok"><li class="menu-item"><i class="fa fa-hide"></i>Tik Tok</li></a>
 </section>
 <section class="other-pages">
-<a href="community.html"><li class="menu-item"><i class="fa fa-commenting-o"></i>Komunitas & Team Support</li></a>
+<a href="komunitas.html"><li class="menu-item"><i class="fa fa-commenting-o"></i>Komunitas & Team Support</li></a>
 <a href="file.html"><li class="menu-item"><i class="fa fa-folder"></i>Files</li></a>
 <a href="document.html"><li class="menu-item"><i class="fa fa-file-text"></i>Dokument</li></a>
 <a href=""><li class="menu-item"><i class="fa fa-image"></i>Gallery</li></a>
-<a href=""><li class="menu-item"><i class="fa fa-newspaper-o"></i>Berita & Kabar</li></a>
-<a href="setting.html"><li class="menu-item"><i class="fa fa-gear"></i>Settings</li></a>
 <a href="bug.html"><li class="menu-item"><i class="fa fa-bug"></i>Bug Fixes & Reporting</li></a>
-<a href="sertifikat.html#informasi-sertifikat" onclick="alert('[ Informasi Sertifikasi Website ] Website Dibuat Oleh : @Ernestoyoofi, Tanggal Pembuatan Website : 26/11/2021, Tanggal Perilisan Website : 28/11/2021, Website Pertama : https://ernestoyoofi.github.io/spesana/, Terakhir Update Version : 7/12/2021,Website Version : 1.17.4 Bug Fixes, Kadaluwarsa Lisensi Website : 5/4/2022, Kadaluarsa Sertifikasi Website : 14/4/2022, Bahasa : Indonesia ( in / id ), Tema Mode : Dark Mode, Nama URL Website Tersedia : https://ernestoyoofi.github.io/ , https://ernestoyoofi.github.io/spesana/ , ernestoyoofi.github.io ,Organisasi : Github, Inc. , Common Name : github.com, Verification By Google : Yes, Engine : AMP HTML Accelerate, Code Index : Yes, Search Console : No, Privasi Website : No, Open Source : Yes, API Script : JavaScript (JS)')"><li class="menu-item"><i class="fa fa-info"></i>Infomasi Sertifikat Website</li></a>
+<a href="licency-and-policy.html#certificate" onclick="alert('[ Informasi Sertifikasi Website ] [ Website Dibuat Oleh : @Ernestoyoofi ],[ Tanggal Pembuatan Website : 26/11/2021 ],[ Tanggal Perilisan Website : 28/11/2021 ],[ Website Pertama : https://ernestoyoofi.github.io/spesana ],[ Terakhir Update Version : 13/12/2021 16:46 ],[ Website Version : 1.17.4 Bug Fixes ],[ Kadaluwarsa Lisensi Website : 5/4/2022 ],[ Kadaluarsa Sertifikasi Website : 14/4/2022 ],[ Bahasa : Indonesia ( in / id ) ],[ Tema Mode : Dark Mode ],[ Nama URL Website Tersedia : https://ernestoyoofi.github.io/ , https://ernestoyoofi.github.io/spesana/ ], ernestoyoofi.github.io ],[ Organisasi : Github , Inc. ],[ Common Name : github.com ],[ Verification By Google : Yes ],[ Engine : AMP HTML Accelerate ⚡ ],[ Code Index : Yes, Search Console : No ],[ Privasi Website : No, Open Source : Yes ],[ API Script : JavaScript (JS) ]')"><li class="menu-item"><i class="fa fa-info"></i>Infomasi Sertifikat Website</li></a>
+<a href="sign-in.php"><li class="menu-item" style="background-color: rgba(120,120,120,0.90); bottom: 0px;"><i class="fa fa-sign-in"></i><b>Username</b> <img src="image/user/login/unknow.png" alt="username login..." width="26" style="float:right; padding-right: 12px;"></li></a>
 </section>
 <p> </p>
 </ul>
