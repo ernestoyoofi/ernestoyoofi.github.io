@@ -14,12 +14,13 @@ const WarningAlert = document.querySelector('.warning-alert');
             btnLoading.classList.toggle('display-off');
             btnKirim.classList.toggle('display-off');
             SuccessAlert.classList.toggle('d-none');
+            alert("Massage Telah Terkirim");
             form.reset();
             console.log('Success!', response);
           })
           .catch((error) => { 
           console.error('Error!', error.message);
-          btnLoading.classList.toggle('display-off');
+         alert("Massage Tidak Terkirim"); btnLoading.classList.toggle('display-off');
           btnKirim.classList.toggle('display-off');
           WarningAlert.classList.toggle('display-off');
           })
