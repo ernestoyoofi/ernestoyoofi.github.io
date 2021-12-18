@@ -1,6 +1,6 @@
 {
 /* Whatsapp Log Bot */
-document.getElementById("title-wa").innerHTML = "Matematika Bersama Jerome";
+document.getElementById("title-wa").innerHTML = "Ernesto Community";
 document.getElementById("member-wa").innerHTML = "12 Perserta" ;
 document.getElementById("member-out-wa").innerHTML = "3 Peserta";
 document.getElementById("member-in-wa").innerHTML = "1 Peserta";
