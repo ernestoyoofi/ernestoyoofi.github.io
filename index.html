@@ -425,7 +425,7 @@ Download Link 2 ( file )<i class="fa fa-download" style="float:right; padding-ri
     <img src="image/image-4.jpg" style="width:100%;">
   </div>
 </div>
-<a href="gallery.html"><div class="project"><center>Lihat Gambar Selengkapnya</center></div></a>
+<a href="gallery.html"><div class="project"><center style="color:#000000;">Lihat Gambar Selengkapnya</center></div></a>
 <script>
 var slideIndex = 0; showSlides(); function showSlides() {  var i; var slides = document.getElementsByClassName("mySlides"); var dots = document.getElementsByClassName("dot"); for (i = 0; i < slides.length; i++) {  slides[i].style.display = "none";   } slideIndex++; if (slideIndex > slides.length) {slideIndex = 1}  for (i = 0; i < dots.length; i++) {  dots[i].className = dots[i].className.replace(" active", ""); } slides[slideIndex-1].style.display = "block"; /*dots[slideIndex-1].className += " active";*/ setTimeout(showSlides, 2540); }</script>
 </div>
@@ -461,7 +461,7 @@ var slideIndex = 0; showSlides(); function showSlides() {  var i; var slides = d
 <!-- Instagram -->
 <td><a href="https://www.instagram.com/story/send?text=Kunjungi+website+https://ernestoyoofi.github.io/"><div class="share-btn"style="background-color: #ff00c7;"><i class="fa fa-instagram" style="font-size: 23px; padding: 4px;"></i> Instagram Story</div></a></td>
 <!-- Copy Url -->
-<td><a onclick="copyEvent('url')"><div class="share-btn"style="background-color: #7b7b7b;" hover><i class="fa fa-copy" style="font-size: 23px; padding: 4px;"></i> Copy Url Website</div></a><script> function copyEvent(id) { var str = document.getElementById(id);      window.getSelection().selectAllChildren(str);  document.execCommand("Copy"); alert(" Teks " + window.location.href + " Telah Disalin ");  }</script><script> document.getElementById("url").innerHTML = " Kunjungi website " + window.location.href ;</script><script> document.getElementById("urlTwo").innerHTML = window.location.href ;</script></td>
+<td><a onclick="copyEvent('url')"><div class="share-btn"style="background-color: #7b7b7b;" hover><i class="fa fa-copy" style="font-size: 23px; padding: 4px;"></i> Copy Url Website</div></a><script> function copyEvent(id) { var str = document.getElementById(id);      window.getSelection().selectAllChildren(str);  document.execCommand("Copy"); alert(" Teks " + window.location.href + " Telah Disalin "); console.log("Teks " + window.location.href + " Telah Disalin"); }</script><script> document.getElementById("url").innerHTML = " Kunjungi website " + window.location.href ;</script><script> document.getElementById("urlTwo").innerHTML = window.location.href ;</script></td>
 </tr>
 </table>
 </div></div>
