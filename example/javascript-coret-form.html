@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<meta charset="UTF-8">
+				<title>Javascript Coret Form From URL</title>
+				<meta name="description" content="example project ernesto yoofi">
+</head>
+<body>
+<script type="text/javascript">
+function takevalues() { 
+  var value1 = document.getElementById('textfield1').value;
+  var value2 = document.getElementById('textfield2').value;
+  var value3 = document.getElementById('textfield3').value; 
+  window.location = "https://ernestoyoofi.github.io/example/javascript-coret-form.html?name="+value1+"&email="+value2+"&text="+value3; }
+</script>
+<form name="myform" action="javascript:takevalues()" method="POST">
+				<br><br>
+				<input type="text" size="25" id ="textfield1"> 
+				<br>
+				<input type="text" size="25" id ="textfield2"> 
+				<br>
+				<input type="text" size="25" id ="textfield3"> 
+				<br> 
+				<br><br> 
+				<input type="submit" size="value" id ="Submit"> 
+</form>
+<br>
+<br>
+<input type="" value="https://ernestoyoofi.github.io/example/javascript-coret-form.html?name=...&emailto=...&text=..." style="width:560px">
+<br>
+<br>
+<style>
+*, body {
+  margin:0;
+	 padding:0;
+	 font-size: 14px;
+}
+</style>
+<div id="alert" style="margin:0; padding:5px; background-color: #d2d2d2; color:white; border-radius: 4px; border-left: 2px solid #00c0ff; box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; width: 300px;">
+<b>Get Code ?</b>
+<p>Go To <a href="https://github.com/ernestoyoofi/ernestoyoofi.github.io/example/" style="color: #00d5ff; text-decoration: none;">Github Repository @Ernestoyoofi</a></p>
+</div>
+</body>
+</html>
