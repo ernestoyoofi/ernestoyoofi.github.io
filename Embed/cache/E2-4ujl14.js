@@ -1,0 +1,2 @@
+document.getElementById("title-web").innerHTML = "IPA [39B5020].mp4";
+document.getElementById("Embed-E2-4ujl14").innerHTML = '<video controls autoplay src="cache/IPA [39B5020].mp4" width="100%" class=""id="video"></video>';
