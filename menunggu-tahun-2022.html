@@ -30,12 +30,12 @@
 </head>
 <body>
 
-<h4 id="demo" style="color: blue"></h4>
+<h4 id="demo"></h4>
 				
 </iframe>
 <script>
 // Set the date we're counting down to
-var countDownDate = new Date("Jan 1, 2022 00:00:00").getTime();
+var countDownDate = new Date("Jan 1, 2022 00:08:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -58,7 +58,7 @@ var x = setInterval(function() {
 
 if (distance < 0) {
     clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("demo").innerHTML = "<b style='color: blue'>Selamat Tahun Baru 🥳</b>";
   }
 }, 1000);
 </script>
