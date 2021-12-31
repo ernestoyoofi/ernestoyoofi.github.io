@@ -4,6 +4,7 @@
 				<meta charset="UTF-8">
 				<meta name="description" content="Time To 2022?">
 				<title>Menunggu 2022</title>
+				<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 				<style>
 				body { 
      background-color: white;
@@ -13,12 +14,27 @@
     color : #0081ff;
     text-decoration: none;
     }
+    h4 {
+    padding-top: 400px;
+    text-align: center; text-justify: center; item-align: center;
+    position: absolutely;
+    }
+    .disable {
+    animation: 30s ease disabled ;
+    }
+    @keyframe disabled {
+    0% { opacity: 1; }
+    2% { opacity:0;}
+    }
 				</style>
 </head>
 <body>
 
-<p id="demo"></p>
+<h4 id="demo"></h4>
 
+<iframe src="https://www.youtube.com/embed/r-FpY41FmHI?autoplay=1" width="100%" style="border: none; " class="disabled">
+				
+</iframe>
 <script>
 // Set the date we're counting down to
 var countDownDate = new Date("Jan 1, 2022 00:00:00").getTime();
