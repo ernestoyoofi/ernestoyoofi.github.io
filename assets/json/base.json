@@ -1,0 +1,14 @@
+{
+   "title_index" : "Ernesto Yoofi",
+   "base_url" : "https://ernestoyoofi.github.io",
+   "publicer" : "pages.github.com",
+   "common_url" : "ernestoyoofi.github.io",
+   "branch" : "Root",
+   "url_start" : "/",
+   "ssl_certificate" : {
+      "organization_ssl" : "DigiCert Inc",
+      "extension_url" : [
+         { "name" : "*.github.com" }, { "name" : "github.com" }, { "name" : "*.github.io" }, { "name" : "github.io" }, { "name" : "githubusercontent.com" }, { "name" : "*.githubusercontent.com" }
+      ]
+   }
+}
