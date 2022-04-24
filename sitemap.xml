@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:sites="1">
+  <url>
+    <title>Ernesto Yoofi</title>
+    <loc>https://ernestoyoofi.github.io/</loc>
+    <item>
+       <title>Ernesto Yoofi</title>
+       <description>Website resmi Ernesto Yoofi dan playgroudnya</description>
+       <loc>https://ernestoyoofi.github.io/</loc>
+       <link>https://ernestoyoofi.github.io/</link>
+       <pubDate>2022-04-24</pubDate>
+    </item>
+  </url>
+  <url>
+    <title>Docs - Ernesto Yoofi</title>
+    <loc>https://ernestoyoofi.github.io/docs</loc>
+    <item>
+       <title>Docs - Ernesto Yoofi</title>
+       <description>Dokumentasi Ernesto Yoofi project</description>
+       <loc>https://ernestoyoofi.github.io/docs</loc>
+       <link>https://ernestoyoofi.github.io/docs</link>
+       <pubDate>2022-04-24</pubDate>
+    </item>
+  </url>
+  <url>
+    <title>Gallery - Ernesto Yoofi</title>
+    <loc>https://ernestoyoofi.github.io/gallery</loc>
+    <item>
+       <title>Ernesto Yoofi</title>
+       <description>List Dan Kumpulan Gallery Ernesto Yoofi</description>
+       <loc>https://ernestoyoofi.github.io/gallery</loc>
+       <link>https://ernestoyoofi.github.io/gallery</link>
+       <pubDate>2022-04-24</pubDate>
+    </item>
+  </url>
+  <url>
+    <title>Library - Ernesto Yoofi</title>
+    <loc>https://ernestoyoofi.github.io/library</loc>
+    <item>
+       <title>Library - Ernesto Yoofi</title>
+       <description>Perpustakaan Ernesto Yoofi Buku, Dokumentasi, List Project, Dan Playgroudnya</description>
+       <loc>https://ernestoyoofi.github.io/library</loc>
+       <link>https://ernestoyoofi.github.io/library</link>
+       <pubDate>2022-04-24</pubDate>
+    </item>
+  </url>
+</urlset>
