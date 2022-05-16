@@ -1,9 +1,0 @@
-div, p, a, footer, input, form, i, img
-{
-outline: 1px solid gray;
-}
-div:hover, p:hover, a:hover, footer:hover, input:hover, form:hover, i:hover, img:hover
-{
-outline: 1px solid red;
-content: "hover";
-}
