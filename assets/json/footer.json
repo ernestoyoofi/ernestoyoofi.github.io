@@ -1,0 +1,29 @@
+{
+    "social_media" : [
+        {
+            "title" : "Instagram",
+            "url" : "https://www.instagram.com/yoofi.ernesto/",
+            "icon" : "instagram"
+        },
+        {
+            "title" : "Facebook",
+            "url" : "https://www.facebook.com/zeemong.yetta.5/",
+            "icon" : "facebook-f"
+        },
+        {
+            "title" : "Youtube",
+            "url" : "https://www.youtube.com/channel/UCoiy7J9wuubiqdvvJvImmMg",
+            "icon" : "youtube"
+        },
+        {
+            "title" : "Github",
+            "url" : "https://github.com/ernestoyoofi",
+            "icon" : "github"
+        },
+        {
+            "title" : "Twitter",
+            "url" : "https://twitter.com/Ernestoyoofi",
+            "icon" : "twitter"
+        }
+    ]
+}
