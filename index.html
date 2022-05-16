@@ -75,10 +75,7 @@
                 <span class="labels">Rekomendasi Video</span>
                 <div class="content">
                     <div class="item-box-row-2">
-                        <div class="item-box view-scoll">
-                            <div class="yt-container">
-                                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/0u_8Y3gIfek" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" class="yt-iframe"></iframe>
-                            </div>
+                        <div class="item-box view-scoll" id="new-content-update-home-id">
                         </div>
                         <div class="item-box view-scoll">
                             <div style="display: flex; justify-content: center; align-items: center; width: 100%; height: 100%; padding: 40px;">
@@ -276,7 +273,11 @@
         });
         $.getJSON('/assets/json/home-menu.json', function(DataCo) {
             document.getElementById("new-content-update-home").innerHTML = `<b style="padding-bottom: 10px; display: inline-block;">${DataCo.youtube_rec.title}</b><p style="display: inline-block;">${DataCo.youtube_rec.description}</p>`
+            document.getElementById("new-content-update-home-id").innerHTML = `<img src="https://img.youtube.com/vi/${DataCo.youtube_rec.videoId}/hqdefault.jpg" width="100%" onclick="NewUpdateContent('${DataCo.youtube_rec.videoId}')" />`
         })
+        function NewUpdateContent(id) {
+            document.getElementById("new-content-update-home-id").innerHTML = `<div class="yt-container"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/${id}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;" class="yt-iframe"></iframe></div>`
+        }
         window.addEventListener('load', (event) => {
             document.getElementById("loading-page").style.animation = '1.3s SuccessLoading'
             setTimeout(SuccessLoading, 130)
