@@ -1,0 +1,68 @@
+.banner {
+  width: 100%;
+  height: 50vh;
+  min-height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.banner .image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-color: #000000;
+}
+.banner .titles {
+  width: 100%;
+  height: 50vh;
+  min-height: 240px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1px);
+}
+.banner .titles .about_pict {
+  position: absolute;
+  color: #ffffff;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+}
+.banner .titles .about_pict .about_pict_details {
+  position: absolute;
+  background-color: #ffffff;
+  color: #000000;
+  width: 200px;
+  height: 0px;
+  margin-top: -10px;
+  border-radius: 4px;
+  font-size: 13px;
+  padding: 0px 14px;
+  overflow: hidden;
+  transform: rotate(2deg);
+  margin-left: 3px;
+  transition: .3s;
+}
+.banner .titles .about_pict:hover .about_pict_details {
+  height: 320px;
+  padding: 14px;
+  margin-top: -330px;
+}
+.banner .titles .about_pict .about_pict_details b {
+  font-size: 15px;
+}
+.banner .titles .about_pict .about_pict_details a {
+  text-decoration: none;
+  color: #2243ff;
+}
+.banner .titles .about_pict .about_pict_details ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+.banner .titles .about_pict .about_pict_details ul li {
+  padding: 1.4px 0px;
+}

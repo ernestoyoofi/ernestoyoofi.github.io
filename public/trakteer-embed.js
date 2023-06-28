@@ -1,0 +1,1 @@
+(function() {var trbtnId = trbtnOverlay.init('Bantu dukung aku yuk !','#be1e2d','https://trakteer.id/ernestoyoofi/tip/embed/modal','https://trakteer.id/storage/images/units/uic-MkEdesc5qGuIy0Zr7HusEFA0ArHYXTzW1645529195.png','40','inline');trbtnOverlay.draw(trbtnId);})();
