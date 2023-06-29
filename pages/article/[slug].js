@@ -7,3 +7,26 @@ export default function ArticleReaderSlug_UI() {
     </div>
   )
 }
+
+// Getting All List Params
+export async function getStaticPaths() {
+  const paths = [
+    "test",
+    "content",
+    "test-2"
+  ].map(z => ({ params: { slug: z } }))
+
+  return {
+    paths,
+    fallback: false
+  }
+}
+
+// Server Side Rendering
+export async function getStaticProps(context) {
+  return {
+    props: {
+      slug: context.params.slug || null
+    }
+  }
+}
