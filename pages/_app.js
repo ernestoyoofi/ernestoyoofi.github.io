@@ -1,8 +1,12 @@
 import "~/pages/global.css"
 import Head from "next/head"
 import Layout_Navbar from "~/layout/navbar"
+import { useEffect } from "react"
 
 export default function App({ Component, pageProps }) {
+  useEffect(() => {
+    document.querySelector('[data-styled="active"]')?.remove()
+  })
   return (
     <>
       <Head>

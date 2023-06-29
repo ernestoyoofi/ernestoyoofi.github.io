@@ -16,14 +16,20 @@ const ComponentsBanner = () => {
 
 const sampledata = [
   {
-    title: "",
-    image: "",
-    desc: "",
-    slug: "",
-    time: "",
-    catagory: [""]
+    title: "Testing",
+    image: "https://picsum.photos/id/237/200/300",
+    desc: "Testing artikel",
+    slug: "test",
   }
 ]
+
+const loadAllSync = () => {
+  let maps = []
+  for(let z of [...Array(5)]) {
+    maps.push(sampledata[0])
+  }
+  return maps
+}
 
 export default function Home_UI() {
   return (
@@ -34,7 +40,7 @@ export default function Home_UI() {
         components={<ComponentsBanner />}
       />
       <div className="response">
-        <Layout_HomeList data={sampledata}/>
+        <Layout_HomeList data={loadAllSync()}/>
       </div>
     </>
   )

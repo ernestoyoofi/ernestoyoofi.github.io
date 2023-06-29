@@ -60,9 +60,9 @@
   margin: 0;
   padding: 0;
   display: block;
-  padding-top: 9px;
-  padding-bottom: 9px;
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
 .banner .titles .about_pict .about_pict_details ul li {
-  padding: 1.4px 0px;
+  padding: 1px 0px;
 }

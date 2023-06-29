@@ -5,7 +5,7 @@ import syl from "~/layout/banner.module.css"
 export default function Layout_Banner({ sources = {}, aboutPic, components = <></> }) {
   return (
     <div className={syl.banner}>
-      <Image {...sources} className={syl.image} loading="lazy"/>
+      <img src={sources.src} className={syl.image} loading="lazy"/>
       <div className={syl.titles}>
         <div className={syl.about_pict}>
           <div className={syl.about_pict_details}>
