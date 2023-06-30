@@ -6,6 +6,7 @@
   height: 50px;
   color: #ffffff;
   z-index: 99999;
+  background-color: rgba(0, 110, 255, 0.623);
 }
 .header a {
   color: #ffffff;

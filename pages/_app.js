@@ -14,6 +14,7 @@ export default function App({ Component, pageProps }) {
         <meta name="description" content="Situs artikel resmi dari ernestoyoofi" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://ernestoyoofi-googlecloaddrivew-cdn.on.drv.tw" crossOrigin/>
       </Head>
       <Layout_Navbar />
       <Component {...pageProps} />

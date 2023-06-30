@@ -1,23 +1,14 @@
 .list_article {
   padding: 0px 12px;
 }
-.list_article h3 {
-  margin: 0;
-  padding: 0;
-}
 .article_card {
   width: 100%;
   display: flex;
-  align-items: center;
   margin-top: 15px;
-  cursor: pointer;
   background-color: #ffffff;
   transition: .3s;
   overflow: hidden;
   border-radius: 4px;
-}
-.article_card:hover {
-  background-color: #f5f5f5ff;
 }
 .article_card .article_image {
   width: 200px;
@@ -37,13 +28,46 @@
   width: calc(100% - 200px);
   padding: 12px 18px;
 }
+.article_card .article_info h3 {
+  font-size: 19px;
+}
+.article_card .article_info h3:hover {
+  text-decoration: underline;
+}
 .article_card .article_info h3, .article_card .article_info p {
   padding: 0;
   margin: 0;
+  font-size: 16px;
+  cursor: pointer;
+}
+.article_card .article_info small {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.article_card .article_info small [comps="recount-icon"] {
+  margin-right: 7px;
+}
+.article_card .article_info small [comps="recount-time"] {
+  padding: 4px 9px;
+  border-radius: 5px;
+  background-color: #0051ff18;
+  display: inline-flex;
+  align-items: center;
+}
+.article_card .article_info small [comps="recount"] {
+  padding: 4px 9px;
+  border-radius: 5px;
+  background-color: #0051ff18;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 6px;
+  cursor: pointer;
+  overflow: hidden;
 }
 .button_more {
   width: 100%;
-  height: 50px;
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,4 +79,23 @@
   cursor: pointer;
   padding: 3px 9px;
   border-radius: 4px;
+}
+
+@media only screen and (max-width: 640px) {
+  .article_card {
+    display: block;
+    height: auto;
+  }
+  .article_card .article_image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+  }
+  .article_card .article_info {
+    width: 100%;
+    padding: 12px 0px;
+  }
+  .article_card .article_info small [comps="recount"] {
+    display: none;
+  }
 }

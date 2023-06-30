@@ -6,7 +6,7 @@ export default function Layout_Navbar() {
     <header className={syl.header}>
       <div className={"response "+syl.links}>
         <Link href="/">Beranda</Link>
-        <Link href="/article/aboutme">Tentang</Link>
+        <Link href="/explorer-maps?utm_source=navbar-pages">Explorer Maps</Link>
       </div>
     </header>
   )

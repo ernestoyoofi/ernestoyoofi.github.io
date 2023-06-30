@@ -1,3 +1,4 @@
+import Head from "next/head"
 import Layout_Banner from "~/layout/banner"
 import Layout_HomeList from "~/layout/homelist"
 import bannerImage from "~/public/banner.jpg"
@@ -14,34 +15,30 @@ const ComponentsBanner = () => {
   )
 }
 
-const sampledata = [
-  {
-    title: "Testing",
-    image: "https://picsum.photos/id/237/200/300",
-    desc: "Testing artikel",
-    slug: "test",
-  }
-]
-
-const loadAllSync = () => {
-  let maps = []
-  for(let z of [...Array(5)]) {
-    maps.push(sampledata[0])
-  }
-  return maps
-}
-
-export default function Home_UI() {
+export default function Home_UI({ article }) {
   return (
     <>
+      <Head>
+        <title>Ernestoyoofi - Beranda</title>
+      </Head>
       <Layout_Banner
         sources={bannerImage}
         aboutPic={bannerImageAbout}
         components={<ComponentsBanner />}
       />
       <div className="response">
-        <Layout_HomeList data={loadAllSync()}/>
+        <Layout_HomeList data={article}/>
       </div>
     </>
   )
+}
+
+export async function getStaticProps() {
+  const article_api = require("~/lib/posts")
+
+  return {
+    props: {
+      article: article_api.onlyGetListPosts()
+    }
+  }
 }
