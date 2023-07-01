@@ -1,5 +1,30 @@
+.supported_mdx {
+  padding: 3px 14px;
+}
 .markdown_back {
   border: none;
   outline: none;
   background-color: #ffffff;
+}
+.markdown_view code {
+  font-family: 'JetBrains Mono', monospace;
+  background-color: #f3f3f3;
+  padding: 4px 8px;
+}
+.markdown_view pre code {
+  background-color: transparent;
+}
+.markdown_view pre * {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 15px;
+}
+.markdown_view blockquote {
+  background-color: #eeeeee;
+  border-left: 8px solid #535353;
+  margin: 0;
+  padding: 2px 4px 2px 15px;
+  border-radius: 2px;
+}
+.markdown_view blockquote p {
+  margin: 3px 0px;
 }

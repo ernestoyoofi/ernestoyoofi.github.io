@@ -1,3 +1,4 @@
+import "~/pages/prims.css"
 import "~/pages/global.css"
 import Head from "next/head"
 import Layout_Navbar from "~/layout/navbar"

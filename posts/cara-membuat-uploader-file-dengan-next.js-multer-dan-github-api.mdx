@@ -1,0 +1,62 @@
+---
+title: "Cara membuat uploader file dengan Next.js, Multer dan Github API"
+image: "/article-media-content/thumbnail/cca89f31a89ced4ce973d6512c1dfef642f2303f.image.png"
+desc: "..."
+time: "2023-06-29T07:58:03.421Z"
+catagory: ["next.js", "tutorial"]
+---
+
+Mungkin sudah kita tau bahwa next.js mempunyai sistem api router pada folder `pages/api`
+
+> Repository Example & Beta Test <br/>
+> - Repo: [https://github.com/ernestoyoofi/nextjs-fileuploader-to-githubapi](https://github.com/ernestoyoofi/nextjs-fileuploader-to-githubapi)
+> - Test: [https://nextjs-fileuploader-to-githubapi.mzea.vercel.app](https://nextjs-fileuploader-to-githubapi.mzea.vercel.app)
+
+Install module / depedency yang kita butuhkan yaitu **multer**, **axios**, **dotenv**, **next-connect**
+
+```bash
+npm i next-connect multer axios dotenv
+```
+
+Kita buat beberapa file untuk memulai bagian backend seperti list dibawah
+
+- pages/api/[...slug].js
+- router/fileaction.js
+- lib/github.js
+
+Kemudian isi atau tulis script setiap filenya
+
+> pages/api/[...slug].js
+```js
+import { createRouter } from "next-connect"
+
+const router = createRouter()
+
+// Import Router
+import fileaction from "~/router/fileaction"
+
+// Gunakan Router
+router.use(fileaction)
+
+export default router.handler({
+  onNoMatch: (req, res) => {
+    res.status(404).json({
+      message: "Page Not Found"
+    })
+  },
+  onError: (err, req, res) => {
+    console.error(err.stack)
+    res.status(err.statusCode||500).send({
+      message: err.message
+    })
+  },
+})
+```
+
+> router/fileaction.js
+```js
+```
+
+> lib/github.js
+```js
+```

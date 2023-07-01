@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="id">
       <Head />
       <script src="https://assets.trakteer.id/js/trbtn-overlay.min.js"></script>
-      <body>
+      <body className="line-numbers">
         <Main />
         <NextScript />
       </body>

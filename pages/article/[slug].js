@@ -6,7 +6,7 @@ export default function ArticleReaderSlug_UI({ react_markdown, meta }) {
   return (
     <div>
       <Head>
-        <title>{`${meta.title} - Ernestoyoofi`}</title>
+        <title>{`${meta?.title} - Ernestoyoofi`}</title>
       </Head>
       <div style={{height:50}}></div>
       <Layout_Markdown serial={react_markdown} meta={meta}/>
