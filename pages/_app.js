@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://ernestoyoofi-googlecloaddrivew-cdn.on.drv.tw" crossOrigin/>
       </Head>
-      <div style={{position: fixed; }}>Website Blog Telah Pindah Ke <a href="https://ernestoyoofi.vercel.app">https://ernestoyoofi.vercel.app</a></div>
+      <div style={{position: "fixed"}}>Website Blog Telah Pindah Ke <a href="https://ernestoyoofi.vercel.app">https://ernestoyoofi.vercel.app</a></div>
       <Layout_Navbar />
       <Component {...pageProps} />
     </>
