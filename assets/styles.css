@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Doto:wght@100..900&family=Flow+Circular&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Noto+Sans:wdth,wght@87.5,100..900&family=Outfit:wght@600&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Quicksand:wght@300..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+  font-family: "Plus Jakarta Sans", serif;
+  box-sizing: border-box;
+}
+.jetbrain-font {
+  font-family: "JetBrains Mono", serif;
+}
